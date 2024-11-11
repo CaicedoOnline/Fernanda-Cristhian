@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda/Regalo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Playwrite+IN:wght@100..400&family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: beige;">
+
+    <style>
+        h1 {
+            font-family: 'Playwrite IN', sans-serif;
+            font-size: 30px;
+            color: black;
+            line-height: 100%;
+            font-weight: 300;
+        }
+
+        .header-container {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .curve-container {
+            display: flex;
+            align-items: center; /* Center the items vertically */
+            justify-content: center; /* Center the items horizontally */
+        }
+
+        svg {
+            width: 13%; /* Adjust the width of each curve */
+            height: 40px;
+        }
+
+        .heart-icon {
+            font-size: 24px; /* Size of the heart icon */
+            color: black; /* Color of the heart */
+            margin: 0 20px; /* Spacing around the heart */
+        }
+
+        p {
+            font-family: "Playwrite NZ", cursive;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 300px; /* Limitar el tamaño máximo de la imagen */
+            margin-top: 10px;
+        }
+
+        /* Estilo de la tabla de navegación */
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border-spacing: 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: beige;
+        
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            text-decoration: none;
+            color: rgb(240, 59, 225);
+            padding: 5px;
+            transition: all 0.3s ease; /* Suaviza la transición */
+        }
+
+        /* Estilo de los enlaces cuando el mouse pasa por encima (hover) */
+        a:hover {
+            text-decoration: underline; /* Subraya el texto */
+            color: #e74c3c; /* Cambia el color a un tono rojo cuando se hace hover */
+        }
+
+        /* Flexbox container for text and image */
+        .content-container {
+            display: flex;
+            justify-content: space-between; /* Distribute space between text and image */
+            align-items: flex-start; /* Align items to the top */
+            margin-top: 20px;
+        }
+
+        .text-container {
+            flex: 1; /* Allow text to take up remaining space */
+            padding-right: 20px; /* Add some space between text and image */
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Media Queries for mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px; /* Smaller title font size */
+            }
+
+            .header-container {
+                margin: 10px 0;
+            }
+
+            svg {
+                width: 20%; /* Adjust the width of SVG curves for smaller screens */
+            }
+
+            .heart-icon {
+                font-size: 20px;
+                margin: 0 10px;
+            }
+
+            p {
+                font-size: 16px; /* Smaller text on mobile */
+            
+            }
+
+            img {
+                width: 80%; /* Make the image larger relative to the screen width */
+                max-width: 400px; /* Limitar aún más el tamaño máximo de la imagen */
+                margin-top: 10px;
+            }
+
+            table {
+                width: 100%; /* Ensure the table is responsive */
+                margin-top: 20px;
+            }
+
+            th, td {
+                font-size: 14px; /* Reduce font size in tables for mobile */
+                padding: 8px;
+            }
+
+            .curve-container {
+                flex-direction: column; /* Stack curves and heart vertically on smaller screens */
+            }
+
+            .curve-container svg {
+                width: 30%; /* Reduce curve size */
+            }
+
+            /* Stack text and image on top of each other for small screens */
+            .content-container {
+                flex-direction: column;
+                align-items: center; /* Center text and image */
+            }
+
+            .text-container {
+                padding-right: 0; /* Remove padding */
+                margin-bottom: 20px; /* Add space between text and image */
+            }
+
+            .image-container {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px; /* Even smaller title font size */
+            }
+
+            p {
+                font-size: 14px; /* Further reduce text size on very small screens */
+            }
+
+            img {
+                width: 90%; /* Further increase image size */
+                max-width: 350px; /* Limitar aún más el tamaño máximo de la imagen */
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <center><h1><i>Regalo de bodas</i></h1></center>
+
+    <div class="header-container">
+        <div class="curve-container">
+            <svg>
+                <path d="M0 20 Q 40 40, 100 20 T 200 20" stroke="black" fill="transparent" stroke-width="2"/>
+            </svg>
+            <i class="fa-solid fa-heart heart-icon"></i>
+            <svg>
+                <path d="M0 12 Q 40 0, 100 20 T 200 10" stroke="black" fill="transparent" stroke-width="2"/>
+            </svg>
+        </div>
+    </div>
+
+    <table>
+        <tr style="color: rgb(129, 9, 99);">
+            <th><a href= "inicio.html">Inicio</a></th>
+            <th><a href="Informacion.html">Informacion</a></th>
+            <th><a href="Programacion.html">Programacion</a></th>
+            <th>Regalos de boda</th>
+            <th><a href="asistencia.html">Asistencia</a></th>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Flexbox content container for text and image -->
+    <div class="content-container">
+        <div class="text-container">
+            <p>Tu amor, risas y compañía en nuestro gran día es el</p>
+            <p>regalo mas grande de todos, sin embargo, si quieres</p>
+            <p>ayudarnos a celebrar con un regalo, tendremos una</p>
+            <p>caja en la recepción de nuestra boda, donde podras</p>
+            <p>contribuir a nuestro deseo de tener una hermosa luna</p>
+            <p>de miel donde crearemos experiencias y recuerdos</p>
+            <p>para toda la vida.</p>
+        </div>
+        <div class="image-container">
+            <img src="wedding image 5.jpg" alt="Boda">
+        </div>
+    </div>
+
+</body>
+</html>
